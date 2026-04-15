@@ -6,7 +6,9 @@ public class Main {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context =
                 new AnnotationConfigApplicationContext(Config.class);
-
-
+        ReportService reportService = context.getBean(ReportService.class);
+        reportService.newReport();
+        reportService.report();
+        context.close();
     }
 }
