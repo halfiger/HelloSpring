@@ -18,6 +18,8 @@ public class Aop {
 
         System.out.println("[Start] of " + methodName);
 
+        System.out.println("test of new repository location..");
+
         Object o = proceedingJoinPoint.proceed();
         LocalDateTime end = LocalDateTime.now();
         Long time = Duration.between(start, end).toMillis();
