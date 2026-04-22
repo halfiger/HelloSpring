@@ -12,6 +12,7 @@ import java.time.LocalDateTime;
 @Aspect
 @Component
 public class Aop1 {
+    /*
     @Before("execution(* org.aop.practice7.entity.OrderService.*Order*(..))")
     public void beforeAdvice () {
         System.out.println("[SECURITY] Checking user before checkout");
@@ -48,5 +49,10 @@ public class Aop1 {
     @After("execution(int *(..))" )
     public void returnValueIntAdvice () {
         System.out.println("[LOG] returned int value");
+    }
+       */
+    @After("!execution(* org.aop.practice7.entity.p1.*.*())")
+    public void exceptFolderAdvice () {
+        System.out.println("[LOG] not from p1 folder advice");
     }
 }

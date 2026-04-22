@@ -14,7 +14,7 @@ public class Main {
         UserRepository userRepository = context.getBean(UserRepository.class);
         userService.hello();
         userRepository.hello();
-        //context.close();
+        context.close();
     }
 
 }
