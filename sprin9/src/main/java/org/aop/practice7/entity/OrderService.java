@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class OrderService {
-    public void checkout() {
-        System.out.println("checkout method from OrderService class");
+    public void processOrder() {
+        System.out.println("order method from OrderService class");
     }
 }
