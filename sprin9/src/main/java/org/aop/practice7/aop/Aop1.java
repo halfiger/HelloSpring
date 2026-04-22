@@ -34,4 +34,9 @@ public class Aop1 {
     public void argsAdvice(String username) {
         System.out.println("[LOG] Registering user: " + username);
     }
+
+    @After ("execution(* org.aop.practice7.entity.p1..*(..))")
+    public void packageAdvice () {
+        System.out.println("Advice worked only in p1 folder");
+    }
 }
