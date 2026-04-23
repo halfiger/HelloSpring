@@ -23,4 +23,8 @@ public class UserService {
         System.out.println("try to remove all users from db");
         return "all data removed";
     }
+
+    public void updateUser (String username) {
+        System.out.println("try to update username, new username = " + username);
+    }
 }

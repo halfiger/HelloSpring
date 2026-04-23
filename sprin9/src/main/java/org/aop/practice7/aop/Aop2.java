@@ -15,4 +15,6 @@ public class Aop2 {
         System.out.println("[LOG] check dangerous method " + methodName);
         return proceedingJoinPoint.proceed();
     }
+
+
 }
