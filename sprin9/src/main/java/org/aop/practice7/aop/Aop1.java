@@ -110,11 +110,12 @@ public class Aop1 {
     public void allEntityMethods() {
         System.out.println("Pointcut all methods");
     }
-     */
+
 
     @Around ("execution(* delete*(..))")
     public Object catchDangerousMethod (ProceedingJoinPoint proceedingJoinPoint) {
         System.out.println("[LOG] Dangereous method cathed at " + LocalDateTime.now() );
         return null;
     }
+     */
 }

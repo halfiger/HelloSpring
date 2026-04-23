@@ -11,8 +11,12 @@ public class UserService {
     }
 
     public List<String> getUsers () {
-        System.out.println("getting of users in getUsers method");
+        System.out.println("getting users in getUsers method");
         return List.of("dada", "anna");
+    }
+
+    public void saveUser () {
+        System.out.println("save method in UserService class");
     }
 
     public String deleteAllUsers () {
