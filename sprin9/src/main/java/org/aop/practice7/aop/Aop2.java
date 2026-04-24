@@ -9,12 +9,10 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class Aop2 {
-    @Around("execution(* get*()) || execution (* save*())")
-    public Object orAdvice (ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-        String methodName = proceedingJoinPoint.getSignature().getName();
-        System.out.println("[LOG] check dangerous method " + methodName);
-        return proceedingJoinPoint.proceed();
-    }
-
-
+//    @Around("execution(* get*()) || execution (* save*())")
+//    public Object orAdvice (ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+//        String methodName = proceedingJoinPoint.getSignature().getName();
+//        System.out.println("[LOG] check dangerous method " + methodName);
+//        return proceedingJoinPoint.proceed();
+//    }
 }
