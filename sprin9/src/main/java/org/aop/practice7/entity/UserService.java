@@ -28,6 +28,11 @@ public class UserService {
         System.out.println("try to update username, new username = " + username);
     }
 
+    public String updateAndReturnUser (String username) {
+        System.out.println("try to update username, new username = " + username);
+        return username;
+    }
+
     public void createUser (String name, int age) {
         System.out.println("User created, name = " + name + " , age = " + age);
     }
