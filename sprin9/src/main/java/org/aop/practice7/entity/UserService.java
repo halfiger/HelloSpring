@@ -15,6 +15,7 @@ public class UserService {
         return List.of("dada", "anna");
     }
 
+    @Loggable
     public void saveUser () {
         System.out.println("save method in UserService class");
     }
