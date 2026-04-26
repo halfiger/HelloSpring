@@ -8,7 +8,4 @@ public class OrderService {
         System.out.println("order method from OrderService class");
     }
 
-    /*      t-a-s-k-6      */
-
-
 }
