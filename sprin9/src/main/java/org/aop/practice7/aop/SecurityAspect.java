@@ -10,9 +10,9 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(1)
 public class SecurityAspect {
-    @Around("execution(* *())")
-    public Object checkSecurity (ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-        System.out.println("[Security] checking access");
-        return proceedingJoinPoint.proceed();
-    }
+//    @Around("execution(* *())")
+//    public Object checkSecurity (ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+//        System.out.println("[Security] checking access");
+//        return proceedingJoinPoint.proceed();
+//    }
 }

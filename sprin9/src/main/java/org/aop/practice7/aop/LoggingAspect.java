@@ -10,9 +10,9 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(10)
 public class LoggingAspect {
-    @Around("execution(* *())")
-    public Object logingAspect (ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-        System.out.println("[Login] logging");
-        return proceedingJoinPoint.proceed();
-    }
+//    @Around("execution(* *())")
+//    public Object logingAspect(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+//        System.out.println("[Login] logging");
+//        return proceedingJoinPoint.proceed();
+//    }
 }

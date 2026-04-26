@@ -8,9 +8,9 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class Aop18 {
-    @Around("execution(* *..updateAndReturnUser(..))")
-    public Object upper(ProceedingJoinPoint joinPoint) throws Throwable {
-        String result = (String) joinPoint.proceed();
-        return result.toUpperCase();
-    }
+//    @Around("execution(* *..updateAndReturnUser(..))")
+//    public Object upper(ProceedingJoinPoint joinPoint) throws Throwable {
+//        String result = (String) joinPoint.proceed();
+//        return result.toUpperCase();
+//    }
 }
