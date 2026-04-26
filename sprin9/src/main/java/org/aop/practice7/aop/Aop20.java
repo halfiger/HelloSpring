@@ -11,15 +11,15 @@ import java.time.LocalDateTime;
 @Aspect
 @Component
 public class Aop20 {
-    @Around("execution(* *())")
-    public Object timeAdvice(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-        LocalDateTime time1 = LocalDateTime.now();
-        Object o = proceedingJoinPoint.proceed();
-        LocalDateTime time2 = LocalDateTime.now();
-
-        System.out.println("Method name: " +
-                proceedingJoinPoint.getSignature().getName() + " took " +
-                Duration.between(time1, time2).toMillis() + " ms");
-        return o;
-    }
+//    @Around("execution(* *())")
+//    public Object timeAdvice(ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+//        LocalDateTime time1 = LocalDateTime.now();
+//        Object o = proceedingJoinPoint.proceed();
+//        LocalDateTime time2 = LocalDateTime.now();
+//
+//        System.out.println("Method name: " +
+//                proceedingJoinPoint.getSignature().getName() + " took " +
+//                Duration.between(time1, time2).toMillis() + " ms");
+//        return o;
+//    }
 }
