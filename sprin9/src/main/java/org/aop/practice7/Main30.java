@@ -10,9 +10,10 @@ public class Main30 {
 
         try(context) {
             UserService userService = context.getBean(UserService.class);
-            userService.loginUser("Admin");
-            userService.loginUser("dada");
-            userService.updateUser("Admin");
+//            userService.loginUser("Admin");
+//            userService.loginUser("dada");
+//            userService.updateUser("Admin");
+            userService.getUsers();
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
