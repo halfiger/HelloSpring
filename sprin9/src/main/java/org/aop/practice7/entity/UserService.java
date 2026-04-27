@@ -54,4 +54,8 @@ public class UserService {
     public void loadData () {
         System.out.println("data relocated");
     }
+
+    public String getUser ( String id) {
+        return "" + id.hashCode();
+    }
 }
