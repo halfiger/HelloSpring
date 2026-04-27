@@ -41,4 +41,12 @@ public class UserService {
     public String getData() {
         throw new RuntimeException("fail");
     }
+
+    void setData() {
+        System.out.println("data configured");
+    }
+
+    public void loadData () {
+        System.out.println("data relocated");
+    }
 }
