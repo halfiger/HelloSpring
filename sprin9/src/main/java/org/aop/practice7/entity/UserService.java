@@ -37,4 +37,8 @@ public class UserService {
     public void createUser (String name, int age) {
         System.out.println("User created, name = " + name + " , age = " + age);
     }
+
+    public String getData() {
+        throw new RuntimeException("fail");
+    }
 }

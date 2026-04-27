@@ -12,8 +12,8 @@ import java.time.LocalDateTime;
 @Component
 @Order(10)
 public class Aop24last {
-    @After("execution(* *())")
-    public void lastAdvice () {
-        System.out.println("[LOG] last advise working at " + LocalDateTime.now());
-    }
+//    @After("execution(* *())")
+//    public void lastAdvice () {
+//        System.out.println("[LOG] last advise working at " + LocalDateTime.now());
+//    }
 }
