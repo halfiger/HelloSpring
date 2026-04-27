@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class Aop27 {
-    @Before("execution(public * *(..))")
-    public void publicAdvice() {
-        System.out.println("[LOG] all public methods");
-    }
+//    @Before("execution(public * *(..))")
+//    public void publicAdvice() {
+//        System.out.println("[LOG] all public methods");
+//    }
 }

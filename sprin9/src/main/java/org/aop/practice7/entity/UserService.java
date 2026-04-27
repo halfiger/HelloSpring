@@ -20,6 +20,11 @@ public class UserService {
         System.out.println("save method in UserService class");
     }
 
+    @Loggable
+    public void loginUser (String username) {
+        System.out.println("user " + username + " logged in");
+    }
+
     public String deleteAllUsers () {
         System.out.println("try to remove all users from db");
         return "all data removed";

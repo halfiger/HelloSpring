@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class Aop28 {
-    @Before("execution(* org.aop.practice7.entity.p1..*(..))")
-    public void folderAdvice() {
-        System.out.println("@Before advice from service-package method");
-    }
+//    @Before("execution(* org.aop.practice7.entity.p1..*(..))")
+//    public void folderAdvice() {
+//        System.out.println("@Before advice from service-package method");
+//    }
 }

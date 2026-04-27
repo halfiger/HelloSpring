@@ -7,12 +7,12 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class Aop29 {
-    @AfterReturning("execution(* *(..)) && args(username)")
-    public void concreteUsernameAdvice(String username) {
-        if (username.equals("ADMIN")) {
-            System.out.println("[LOG] ADMIN account updated");
-        } else {
-            System.out.println("no logs for method");
-        }
-    }
+//    @AfterReturning("execution(* *(..)) && args(username)")
+//    public void concreteUsernameAdvice(String username) {
+//        if (username.equals("ADMIN")) {
+//            System.out.println("[LOG] ADMIN account updated");
+//        } else {
+//            System.out.println("no logs for method");
+//        }
+//    }
 }
