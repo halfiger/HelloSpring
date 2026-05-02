@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class Aop2 {
-    @After("execution(* *Payment())")
-    public void afterAspect () {
-        System.out.println("[LOG] Payment finished");
-    }
+//    @After("execution(* *Payment())")
+//    public void afterAspect () {
+//        System.out.println("[LOG] Payment finished");
+//    }
 }
