@@ -7,8 +7,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class Aop4 {
-    @Before("execution(* register(String)) && args(username)")
-    public void argumentsAccept (String username) {
-        System.out.println("[LOG] User registered as " + username);
-    }
+//    @Before("execution(* register(String)) && args(username)")
+//    public void argumentsAccept (String username) {
+//        System.out.println("[LOG] User registered as " + username);
+//    }
 }
