@@ -10,11 +10,11 @@ import java.time.LocalDateTime;
 @Aspect
 @Component
 public class Aop3 {
-    @Around("execution(* *())")
-    public Object aroundAspect (ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
-        System.out.println("[LOG] start " + LocalDateTime.now());
-        Object o = proceedingJoinPoint.proceed();
-        System.out.println("[LOG] end " + LocalDateTime.now());
-        return o;
-    }
+//    @Around("execution(* *())")
+//    public Object aroundAspect (ProceedingJoinPoint proceedingJoinPoint) throws Throwable {
+//        System.out.println("[LOG] start " + LocalDateTime.now());
+//        Object o = proceedingJoinPoint.proceed();
+//        System.out.println("[LOG] end " + LocalDateTime.now());
+//        return o;
+//    }
 }
