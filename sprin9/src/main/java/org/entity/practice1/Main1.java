@@ -1,6 +1,5 @@
 package org.entity.practice1;
 
-// 👉 main НЕ повинен містити Hibernate-логіку
 public class Main1 {
     public static void main(String[] args) {
         UserService userService = new UserService();

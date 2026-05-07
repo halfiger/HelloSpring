@@ -8,7 +8,7 @@ public class HibernateUtil {
 
     static {
         factory = new Configuration()
-                .configure("hibernate.cfg.cml")
+                .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(User.class)
                 .buildSessionFactory();
     }
