@@ -1,25 +1,11 @@
 package org.entity.practice1;
 
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.cfg.Configuration;
-
+// 👉 main НЕ повинен містити Hibernate-логіку
 public class Main1 {
     public static void main(String[] args) {
-        SessionFactory factory = new Configuration()
-                .configure("hibernate.cfg.xml")
-                .addAnnotatedClass(User.class)
-                .buildSessionFactory();
-        Session session = factory.getCurrentSession();
+        UserService userService = new UserService();
         User user = new User("Ira", "ira@mail", 39);
-
-        try {
-            session.beginTransaction();
-            session.save(user);
-            session.getTransaction().commit();
-        } finally {
-            //session.close();
-            factory.close();
-        }
+        userService.saveUser(user);
+        System.out.println("attempt to save");
     }
 }
