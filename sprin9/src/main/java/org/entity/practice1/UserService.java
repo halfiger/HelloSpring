@@ -36,6 +36,17 @@ public class UserService {
         return list;
     }
 
+    public List <User> findUsersOlderThan (int age) {
+        Session session = factory.getCurrentSession();
+        session.beginTransaction();
+        List<User> list = session.createQuery("from User where age > " + age).getResultList();
+        session.getTransaction().commit();
+        System.out.println("find all done marker");
+        return list;
+    }
+
+
+
     public void delete() {
     }
 
