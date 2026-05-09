@@ -30,7 +30,7 @@ public class UserService {
     public List<User> findAll() {
         Session session = factory.getCurrentSession();
         session.beginTransaction();
-        List<User> list = session.createQuery("from Users").getResultList();
+        List<User> list = session.createQuery("from User").getResultList();
         session.getTransaction().commit();
         System.out.println("find all done marker");
         return list;
