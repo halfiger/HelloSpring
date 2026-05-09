@@ -30,7 +30,7 @@ public class UserService {
     public List<User> findAll() {
         Session session = factory.getCurrentSession();
         session.beginTransaction();
-        List<User> list = session.createQuery("from User").getResultList();
+        List<User> list = session.createQuery("from User", User.class).getResultList();
         session.getTransaction().commit();
         System.out.println("find all done marker");
         return list;
@@ -41,7 +41,6 @@ public class UserService {
         session.beginTransaction();
         List<User> list = session.createQuery("from User u where u.age > :age").setParameter("age", age).getResultList();
         session.getTransaction().commit();
-        System.out.println("find all done marker");
         return list;
     }
 
