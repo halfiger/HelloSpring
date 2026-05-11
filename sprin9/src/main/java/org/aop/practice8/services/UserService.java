@@ -19,6 +19,9 @@ public class UserService {
         return List.of("dada", "ada", "madaam");
     }
 
-
+    public boolean updateUser (String name) {
+        System.out.println("user updated, new name = " + name);
+        return true;
+    }
 
 }
