@@ -9,8 +9,8 @@ import org.springframework.stereotype.Component;
 @Component
 @Order(2)
 public class Aop14Security {
-    @Before("execution(* *(..))")
-    public void LoggingAspect () {
-        System.out.println("[LOG] logging aspect [second]");
-    }
+//    @Before("execution(* *(..))")
+//    public void LoggingAspect () {
+//        System.out.println("[LOG] logging aspect [second]");
+//    }
 }

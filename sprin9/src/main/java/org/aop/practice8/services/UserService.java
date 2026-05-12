@@ -23,4 +23,8 @@ public class UserService {
         System.out.println("user updated, new name = " + name);
         return true;
     }
+
+    public void createUser (String name, int age) {
+        System.out.println("User created, name = " + name  + ", age = " + age);
+    }
 }
