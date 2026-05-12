@@ -23,5 +23,4 @@ public class UserService {
         System.out.println("user updated, new name = " + name);
         return true;
     }
-
 }
