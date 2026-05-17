@@ -1,0 +1,22 @@
+package org.aop.practice8.starter;
+
+import org.aop.practice8.config.Config;
+import org.aop.practice8.services.UserService;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Main17 {
+    public static void main(String[] args) {
+        AnnotationConfigApplicationContext context =
+                new AnnotationConfigApplicationContext(Config.class);
+
+        try(context) {
+            UserService userService = context.getBean(UserService.class);
+            userService.createUser("dada", 22);
+            userService.createUser("", 2);
+            userService.createUser(null, 2);
+
+        } catch (Exception e) {
+            System.out.println("[*] message from main + " + e.getMessage());
+        }
+    }
+}
