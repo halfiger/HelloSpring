@@ -12,8 +12,7 @@ public class Main17 {
         try(context) {
             UserService userService = context.getBean(UserService.class);
             userService.createUser("dada", 22);
-            userService.createUser("", 2);
-            userService.createUser(null, 2);
+            userService.createUser("baba", 2);
 
         } catch (Exception e) {
             System.out.println("[*] message from main + " + e.getMessage());
