@@ -44,6 +44,29 @@ public class UserService {
         return list;
     }
 
+    public User updateUserEmail(String newEmail, Long id) {
+        Session session = factory.getCurrentSession();
+        session.beginTransaction();
+        User user = session.get(User.class, id);
+        if (user != null) {
+            user.setEmail(newEmail);
+        }
+        session.getTransaction().commit();
+        return user;
+    }
+
+    public User updateUserName(String newName, Long id) {
+        Session session = factory.getCurrentSession();
+        session.beginTransaction();
+        User user = session.get(User.class, id);
+        if (user != null) {
+            user.setName(newName);
+        }
+        session.getTransaction().commit();
+        return user;
+    }
+
+
     public List<User> pagination(int page, int size) {
         Session session = factory.getCurrentSession();
         session.beginTransaction();
@@ -57,5 +80,26 @@ public class UserService {
                 .getResultList();
         session.getTransaction().commit();
         return list;
+    }
+
+    public Boolean deleteById(Long id) {
+        Boolean deleted = false;
+        Session session = factory.getCurrentSession();
+        session.beginTransaction();
+        User user = session.get(User.class, id);
+
+        if (user != null) {
+            session.remove(user);
+            deleted = true;
+        }
+        return deleted;
+    }
+
+    public User findByEmail (String email) {
+        Session session = factory.getCurrentSession();
+        session.beginTransaction();
+        User user = session.createQuery("From User u where u.email = :email", User.class).setParameter("email", email).getSingleResult();
+        session.getTransaction().commit();
+        return user;
     }
 }

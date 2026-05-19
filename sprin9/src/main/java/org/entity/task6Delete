@@ -1,0 +1,19 @@
+🔥 І тепер ти готовий до наступного рівня CRUD
+Твоє наступне завдання
+
+Реалізуй:
+
+deleteUserById(Long id)
+💡 Варіант через managed entity
+get()
+delete/remove
+commit
+Підказка
+session.remove(user);
+
+або:
+
+session.delete(user);
+⚠️ І тут теж:
+
+не забудь перевірку на null 🙂
