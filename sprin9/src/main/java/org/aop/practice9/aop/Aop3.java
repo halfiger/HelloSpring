@@ -8,12 +8,12 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class Aop3 {
-    @Around("execution (* *())")
-    public Object aroundAspect (ProceedingJoinPoint point) throws Throwable {
-        System.out.println("[START]");
-        Object o = point.proceed();
-        System.out.println("[END]");
-        return o;
-    }
+//    @Around("execution (* *())")
+//    public Object aroundAspect (ProceedingJoinPoint point) throws Throwable {
+//        System.out.println("[START]");
+//        Object o = point.proceed();
+//        System.out.println("[END]");
+//        return o;
+//    }
 
 }

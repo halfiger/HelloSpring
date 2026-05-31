@@ -8,8 +8,8 @@ import org.springframework.stereotype.Component;
 @Aspect
 @Component
 public class Aop4 {
-    @Before("execution (* *(String)) && args(name)")
-    public void beforeAspect(String name) {
-        System.out.println("[LOG] Registering user: " + name);
-    }
+//    @Before("execution (* *(String)) && args(name)")
+//    public void beforeAspect(String name) {
+//        System.out.println("[LOG] Registering user: " + name);
+//    }
 }
