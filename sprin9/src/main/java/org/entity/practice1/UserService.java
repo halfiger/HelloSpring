@@ -102,4 +102,16 @@ public class UserService {
         session.getTransaction().commit();
         return user;
     }
+
+    public List <User> findByNameContains (String sentence) {
+        Session session = factory.getCurrentSession();
+        session.beginTransaction();
+        List <User>list;
+        list = session.createQuery("from User u where u.name like :sentence", User.class)
+                .setParameter("sentence", "%"+sentence+"%").getResultList();
+        session.getTransaction().commit();
+    return list;
+    }
+
+
 }
